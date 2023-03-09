@@ -31,8 +31,8 @@ def converting():
     global symbol
     url = "https://api.apilayer.com/currency_data/convert"
 
-    currency1 = combo1.get()
-    currency2 = combo2.get()
+    currency2 = combo1.get()
+    currency1 = combo2.get()
     amt = fiat_entry.get()
     querystring = {'to': currency1, "from": currency2, "amount": amt}
 
