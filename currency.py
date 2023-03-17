@@ -53,7 +53,6 @@ def converting():
     }
 
     response = requests.request("GET", url, headers=headers, data=payload, params=querystring)
-
     status_code = response.status_code
     convert = response.text
     data = json.loads(convert)
